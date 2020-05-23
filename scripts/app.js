@@ -18,15 +18,15 @@ const updateUI = (data) =>{
     const { cityDetails , weather } = data ;
 
 	//console.log(cityDetails.EnglishName);
-	console.log(weather);
-	console.log(weather.WeatherText);
+	//console.log(weather);
+	//console.log(weather.WeatherText);
 
    cityName.innerHTML = cityDetails.EnglishName;
    weathercondition.innerHTML = weather.WeatherText;
    temp.innerHTML = weather.Temperature.Metric.Value;
 
    //Update Image
-
+   
    if(weather.IsDayTime)
    {
    	 time.src ="images/day.svg" ;
@@ -36,7 +36,7 @@ const updateUI = (data) =>{
    }
    
    //Update Icon
-   console.log(weather.WeatherIcon);
+   //console.log(weather.WeatherIcon);
     const wIcon = "icons/" +  weather.WeatherIcon + ".svg"
     console.log(wIcon);
     icon.src = wIcon ;
