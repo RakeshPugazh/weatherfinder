@@ -29,10 +29,10 @@ const updateUI = (data) =>{
    
    if(weather.IsDayTime)
    {
-   	 time.src ="images/day.svg" ;
+   	 time.src ="Images/day.svg" ;
    }
    else {
-   	 time.src = "images/night.svg" ;
+   	 time.src = "Images/night.svg" ;
    }
    
    //Update Icon
